@@ -1,177 +1,476 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Imran Hasnat, PhD | Media Production Portfolio</title>
-<meta name="description" content="Media production, digital storytelling, and multimedia journalism work by Imran Hasnat, PhD.">
+<title>Imran Hasnat, PhD | Data, story and sound</title>
+<meta name="description" content="Imran Hasnat, PhD: researcher, educator and media producer studying media, politics and all things digital. Interactive stories, data maps, documentary video and podcasts, and research on AI images, media credibility and public diplomacy.">
+<meta name="theme-color" content="#0d0e12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Imran Hasnat, PhD">
+<meta property="og:description" content="Stories told with data, sound and image. Researcher, educator and media producer.">
+<meta property="og:url" content="https://imranhasnat.com/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+  // Apply a saved theme before first paint. Dark is the default.
+  try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
+  document.documentElement.classList.remove("no-js");
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  :root { --ink: #111; --muted: #555; --rule: #d6d6d6; --paper: #fff; --soft: #f5f5f3; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink);
-         font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; line-height: 1.55; }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-  header { border-bottom: 1px solid var(--ink); padding: 48px 0 24px; }
-  header h1 { margin: 0; font-size: 34px; font-weight: 600; letter-spacing: 0.01em; }
-  header .sub { margin: 6px 0 0; font-family: 'Source Sans 3', sans-serif; font-size: 15px;
-                text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
-  header nav { margin-top: 14px; font-family: 'Source Sans 3', sans-serif; font-size: 15px; }
-  header nav a { color: var(--ink); margin-right: 18px; }
-  .intro { max-width: 720px; padding: 28px 0 8px; }
-  h2 { font-family: 'Source Sans 3', sans-serif; font-size: 14px; text-transform: uppercase;
-       letter-spacing: 0.14em; color: var(--muted); border-bottom: 1px solid var(--rule);
-       padding-bottom: 8px; margin: 40px 0 22px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 32px; }
-  .card { display: flex; flex-direction: column; }
-  .card a.thumb { display: block; aspect-ratio: 16 / 10; background: var(--soft); overflow: hidden;
-                  border: 1px solid var(--rule); }
-  .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .card h3 { margin: 14px 0 2px; font-size: 21px; font-weight: 600; line-height: 1.3; }
-  .meta { font-family: 'Source Sans 3', sans-serif; font-size: 14px; color: var(--muted); margin: 0 0 8px; }
-  .card p { margin: 0 0 10px; font-size: 16.5px; }
-  .card .go { font-family: 'Source Sans 3', sans-serif; font-size: 15px; font-weight: 600; color: var(--ink); }
-  h3.series { margin: 44px 0 4px; font-size: 21px; font-weight: 600; }
-  .eps { display: grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); gap: 18px 32px; margin-top: 18px; }
-  .ep .meta { margin: 0 0 4px; }
-  .ep iframe { width: 100%; height: 166px; border: 0; display: block; }
-  @media (max-width: 560px) { .eps { grid-template-columns: 1fr; } }
-  footer { border-top: 1px solid var(--rule); margin-top: 56px; padding: 22px 0 40px;
-           font-family: 'Source Sans 3', sans-serif; font-size: 14px; color: var(--muted); }
-  footer a { color: var(--ink); }
-  @media (max-width: 560px) { header h1 { font-size: 27px; } body { font-size: 17px; } }
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Imran Hasnat","honorificSuffix":"PhD","url":"https://imranhasnat.com/","jobTitle":"Researcher, educator and media producer","alumniOf":"University of Oklahoma","sameAs":["https://orcid.org/0000-0001-9397-3407","https://github.com/imranpalash"]}
+</script>
 </head>
 <body>
-<header>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" id="top">
   <div class="wrap">
-    <h1>Imran Hasnat, PhD</h1>
-    <p class="sub">Media Production and Digital Storytelling</p>
-    <nav><a href="mailto:imranpalash@gmail.com">Email</a><a href="https://orcid.org/0000-0001-9397-3407">ORCID</a></nav>
+    <a class="brand" href="#top">Imran Hasnat<span class="cred">, PhD</span></a>
+    <button class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#research">Research</a>
+      <a href="#ai">AI</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="icon-btn theme-btn" aria-label="Switch to light theme">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="intro">
-    <p>I teach and produce multimedia journalism and digital stories. This page collects my own production work and examples from my courses in multimedia journalism, digital storytelling, and data visualization at the University of Oklahoma, the University of Liberal Arts Bangladesh, and Stirling College, Chengdu University.</p>
-  </section>
+<main id="main">
 
-  <h2>Interactive storytelling and data visualization</h2>
-  <div class="grid">
-    <article class="card">
-      <a class="thumb" href="race-to-refuge/"><img src="assets/race-to-refuge.jpg" alt="Race to Refuge: a resettlement officer asks the player to choose a response"></a>
-      <h3>Race to Refuge</h3>
-      <p class="meta">Interactive story, 2019 &middot; Best Solo Project, OU Creaties Awards</p>
-      <p>A choose-your-path simulation of the U.S. refugee entry process. Players take the role of an applicant and choose a response at each step of the process. I wrote, designed, and produced the story.</p>
-      <a class="go" href="race-to-refuge/">Play in the browser &rarr;</a>
-    </article>
+<!-- ============ HERO: ATLAS ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="kicker">Researcher &middot; Educator &middot; Producer</span>
+      <h1 id="hero-title">Stories in <em>data,</em><br>sound and image.</h1>
+      <p class="roles"><span>Data visualization</span><span>Digital storytelling</span><span>Multimedia</span></p>
+      <p class="lede">I make interactive stories, data maps, documentaries and podcasts, and I teach students to make them, across the United States, Bangladesh and China.</p>
+    </div>
 
-    <article class="card">
-      <a class="thumb" href="https://www.google.com/maps/d/viewer?mid=14QKs3mdOodq_gsnDuJqUs6IVwKLrUHoM"><img src="assets/shootings-map.jpg" alt="Map of the United States with red markers at the sites of fatal mass shootings"></a>
-      <h3>Shooting Fatalities in the U.S.</h3>
-      <p class="meta">Interactive map, 2021 &middot; Digital Storytelling</p>
-      <p>A data map of fatal mass shootings in the United States, from schools and universities to workplaces and malls. Each marker places an incident, and its color shows the death toll, in six bands from 3 to 70.</p>
-      <a class="go" href="https://www.google.com/maps/d/viewer?mid=14QKs3mdOodq_gsnDuJqUs6IVwKLrUHoM">Explore the map &rarr;</a>
-    </article>
+    <figure class="atlas" aria-label="Map of the places Imran Hasnat has lived and worked, with the route between them" style="margin:0">
+      <div class="atlas-stage" id="atlas">
+        <canvas aria-hidden="true"></canvas>
+        <svg role="img" aria-labelledby="atlas-desc"><desc id="atlas-desc">A dotted world map. Crimson arcs connect Dhaka, Norman in Oklahoma, Washington D.C. and Chengdu in the order of the career route listed beside the map.</desc></svg>
+        <div class="atlas-tip" role="status"></div>
+      </div>
+    </figure>
 
-    <article class="card">
-      <a class="thumb" href="https://public.tableau.com/shared/RTFXB4638?:display_count=n&amp;:origin=viz_share_link"><img src="assets/diaspora-map.jpg" alt="World map with markers at the headquarters of diaspora organizations"></a>
-      <h3>OU Diaspora Map</h3>
-      <p class="meta">Interactive Tableau map, 2017 &middot; Diplomacy Lab, Bureau of Educational and Cultural Affairs, U.S. Department of State</p>
-      <p>A world map of diaspora organizations. Users filter by headquarters country, diaspora affiliation, organization type, and whether an organization hosts events. I built the visualization for a Diplomacy Lab project.</p>
-      <a class="go" href="https://public.tableau.com/shared/RTFXB4638?:display_count=n&amp;:origin=viz_share_link">Explore the map &rarr;</a>
-    </article>
-
-    <!-- TEMPLATE: copy this block for each new piece, fill it in, and delete the comment markers.
-    <article class="card">
-      <a class="thumb" href="LINK"><img src="assets/IMAGE.jpg" alt="DESCRIBE THE IMAGE"></a>
-      <h3>TITLE</h3>
-      <p class="meta">FORMAT, YEAR &middot; COURSE OR CONTEXT</p>
-      <p>TWO SENTENCES: what it is, and which skills it shows.</p>
-      <a class="go" href="LINK">Watch / Listen / View &rarr;</a>
-    </article>
-    -->
+    <aside class="route" aria-label="Career route">
+      <div class="route-head">
+        <span class="meta" id="route-label">The route</span>
+        <div class="seg" role="group" aria-label="Map layer">
+          <button type="button" data-layer="route" aria-pressed="true">Route</button>
+          <button type="button" data-layer="talks" aria-pressed="false">Talks</button>
+        </div>
+      </div>
+      <ol id="route-list"></ol>
+      <div class="route-detail" id="route-detail" aria-live="polite"></div>
+    </aside>
   </div>
+  <div class="scroll-cue"><a href="#work">Selected work</a></div>
+</section>
 
-  <h2>Video</h2>
-  <div class="grid">
-    <article class="card">
-      <a class="thumb" href="https://www.youtube.com/watch?v=eRAeD8lRDkw"><img src="assets/moonmen.jpg" alt="Title card: The Moonmen, over a view of Earth from space"></a>
-      <h3>The Moonmen</h3>
-      <p class="meta">Short documentary, 3 min, 2017 &middot; Produced for the Public Affairs Section, U.S. Embassy Dhaka</p>
-      <p>The story of the Apollo 11 astronauts' goodwill visit to Dhaka on 27 October 1969, part of their 23-country tour after the moon landing. Archival footage and photographs trace the landing, the crowds and motorcades in Dhaka, and Armstrong's message on peace and cooperation. I researched, wrote, and produced the film, including a week of archival research in microfilm collections at the Library of Congress.</p>
-      <a class="go" href="https://www.youtube.com/watch?v=eRAeD8lRDkw">Watch on YouTube &rarr;</a>
-    </article>
+<!-- ============ STATS ============ -->
+<div class="stats" aria-label="At a glance">
+  <div class="wrap">
+    <div class="stat"><div class="num">2015</div><div class="lbl">Teaching at universities since</div></div>
+    <div class="stat"><div class="num">3</div><div class="lbl">Countries taught in: U.S., Bangladesh, China</div></div>
+    <div class="stat"><div class="num">32</div><div class="lbl">Conference presentations, 2014 to 2026</div></div>
+    <div class="stat"><div class="num">$2M<sup>+</sup></div><div class="lbl">State Department exchange grants, as Co-PI</div></div>
   </div>
+</div>
 
-  <h2>Produced with students</h2>
-  <p class="meta" style="margin:-8px 0 22px; max-width:720px">News packages from JMC 3003 Multimedia Journalism, Fall 2021, Gaylord College, University of Oklahoma. I directed, edited, and produced each piece. Student journalists did the reporting and narration, and each video credits them by name.</p>
-  <div class="grid">
-    <article class="card">
-      <a class="thumb" href="https://www.youtube.com/watch?v=pLUpgZ9gLBI"><img src="assets/tulsa-massacre-education.jpg" alt="The National Museum of African American History and Culture in Washington, D.C."></a>
-      <h3>Tulsa Race Massacre Education Around the Country</h3>
-      <p class="meta">TV news package, 1:41, 2021 &middot; Gaylord News, Washington bureau</p>
-      <p>At the massacre's centennial, survivors still seek recognition. The package visits the National Museum of African American History and Culture, finds the Tulsa exhibit behind an unmarked door on the third floor, and asks visitors what they know.</p>
-      <a class="go" href="https://www.youtube.com/watch?v=pLUpgZ9gLBI">Watch on YouTube &rarr;</a>
-    </article>
-
-    <article class="card">
-      <a class="thumb" href="https://www.youtube.com/watch?v=l7UX_MIb-wY"><img src="assets/girls-nation.jpg" alt="An Oklahoma delegate smiles in front of a Girls Nation backdrop"></a>
-      <h3>Girls Nation</h3>
-      <p class="meta">TV news package, 1:29, 2021 &middot; Gaylord News, Washington bureau</p>
-      <p>Oklahoma's delegates at the American Legion Auxiliary's mock Senate for high school girls in Washington. Two delegates explain what they learned about writing, amending, and passing bills across party lines.</p>
-      <a class="go" href="https://www.youtube.com/watch?v=l7UX_MIb-wY">Watch on YouTube &rarr;</a>
-    </article>
-
-    <article class="card">
-      <a class="thumb" href="https://www.youtube.com/watch?v=f3WKH1NP-Bg"><img src="assets/red-river-bridge.jpg" alt="Orange Road Work Ahead sign against a blue sky"></a>
-      <h3>Red River Bridge</h3>
-      <p class="meta">TV news package, 1:22, 2021 &middot; Gaylord News, Washington bureau</p>
-      <p>The I-35 bridge between Oklahoma and Texas nears 60 years old and carries crash rates above both states' averages. The package explains the plan to widen it to six lanes and what it means for freight and commuters.</p>
-      <a class="go" href="https://www.youtube.com/watch?v=f3WKH1NP-Bg">Watch on YouTube &rarr;</a>
-    </article>
-
-    <article class="card">
-      <a class="thumb" href="https://www.youtube.com/watch?v=H49zunP5UPw"><img src="assets/okc-airport.jpg" alt="A student reporter does a stand-up outside Will Rogers airport"></a>
-      <h3>OKC Airport Expansion</h3>
-      <p class="meta">TV news package, 1:52, 2021 &middot; OU Nightly, Gaylord News</p>
-      <p>Out-of-state OU students struggled to fly home from Will Rogers airport. The package shows how new gates brought new airlines and direct routes, with a student stand-up, interviews, and airport data.</p>
-      <a class="go" href="https://www.youtube.com/watch?v=H49zunP5UPw">Watch on YouTube &rarr;</a>
-    </article>
+<!-- ============ WORK INDEX ============ -->
+<section class="block" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">01 &middot; Work index</span><h2 id="work-title">Made for an <em>audience.</em></h2></div>
+      <p>Every piece of work, plotted by year and medium. Hover a mark to see what it is, click to jump to it, or filter by medium.</p>
+    </div>
+    <div class="filters reveal" role="group" aria-label="Filter work by medium" id="filters"></div>
+    <div class="timeline reveal" id="timeline"><div class="tip" role="status"></div></div>
+    <ol class="idx reveal" id="index-list" aria-label="All work"></ol>
   </div>
+</section>
 
-  <h3 class="series">America's Cross-Roads</h3>
-  <p class="meta" style="max-width:720px">Podcast series, Gaylord News &middot; JMC 4303 Advanced Multimedia Journalism, Spring 2022, University of Oklahoma</p>
-  <p style="max-width:720px; font-size:16.5px; margin:8px 0 6px">A 10-episode series on the 2020 election and Oklahoma politics, focused on Christian nationalism and its role in the state's politics. Each episode takes one aspect of Christian nationalism, often with expert guests alongside the Gaylord News team. Hosted by Brooklyn Wayland and Lauren Johnson.</p>
-  <p class="meta" style="max-width:720px">I directed, edited, and produced Episodes 2 to 6, shown here. Other faculty produced the remaining episodes. A student team did the reporting and voice work, and each episode credits them by name at the start and the end. Episodes run 20 to 35 min.</p>
-  <div class="eps">
-    <div class="ep">
-      <p class="meta">Episode 2 &middot; 34:46</p>
-      <iframe title="America's Cross-Roads, Episode 2" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2421692217%3Fsecret_token%3Ds-LrQH7fNht6P&amp;color=%23111111&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false"></iframe>
+<!-- ============ FEATURE: RACE TO REFUGE ============ -->
+<section class="feature" id="race-to-refuge" aria-labelledby="r2r-title">
+  <div class="wrap">
+    <div class="scene reveal">
+      <img src="assets/race-to-refuge.jpg" alt="A resettlement officer in an office, from Race to Refuge" loading="lazy">
+      <div class="choices" role="group" aria-label="Try a choice: the officer says you will first have to apply for resettlement with her office">
+        <button type="button" aria-label="Yes, I would like to apply"></button>
+        <button type="button" aria-label="I don't know how to read or write"></button>
+      </div>
+      <span class="try">Try a choice</span>
+      <div class="outcome" aria-live="polite">
+        <div>
+          <p>Every answer moves you down a different path. Play the full story to see where this one leads.</p>
+          <a class="btn" href="race-to-refuge/index.html">Play Race to Refuge</a>
+        </div>
+      </div>
     </div>
-    <div class="ep">
-      <p class="meta">Episode 3 &middot; 20:01</p>
-      <iframe title="America's Cross-Roads, Episode 3" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2421694359%3Fsecret_token%3Ds-gZ4Q6xfcAQc&amp;color=%23111111&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false"></iframe>
-    </div>
-    <div class="ep">
-      <p class="meta">Episode 4 &middot; 24:17</p>
-      <iframe title="America's Cross-Roads, Episode 4" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2421694365%3Fsecret_token%3Ds-OW5fOcTiFPf&amp;color=%23111111&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false"></iframe>
-    </div>
-    <div class="ep">
-      <p class="meta">Episode 5 &middot; 26:20</p>
-      <iframe title="America's Cross-Roads, Episode 5" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2421694362%3Fsecret_token%3Ds-xt2OsypRLN2&amp;color=%23111111&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false"></iframe>
-    </div>
-    <div class="ep">
-      <p class="meta">Episode 6 &middot; 25:51</p>
-      <iframe title="America's Cross-Roads, Episode 6" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2421694368%3Fsecret_token%3Ds-R17LP1W2a2Y&amp;color=%23111111&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false"></iframe>
+    <div class="reveal">
+      <span class="kicker">02 &middot; Featured interactive</span>
+      <h2 id="r2r-title">Race to Refuge</h2>
+      <div class="award"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 16.8 5.9 20.2l1.5-6.7L2.3 8.9l6.8-.7z"/></svg>Best Solo Project &middot; OU Creaties Awards 2019</div>
+      <p>A choose-your-path simulation of the U.S. refugee entry process. You play an applicant facing the system one conversation at a time, and each answer you give changes what happens next.</p>
+      <ol class="steps">
+        <li><span>01</span>You arrive as an applicant at a resettlement office.</li>
+        <li><span>02</span>At each step, an officer speaks and you choose a response.</li>
+        <li><span>03</span>A meter tracks how the conversation is going, and your choices set your path.</li>
+      </ol>
+      <p class="meta" style="margin-bottom:22px">Written, designed and produced by Imran Hasnat &middot; Built in iSpring &middot; Plays in the browser</p>
+      <a class="btn" href="race-to-refuge/index.html">Play in the browser</a>
     </div>
   </div>
+</section>
+
+<!-- ============ DATA DESK ============ -->
+<section class="block" id="data" aria-labelledby="data-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">03 &middot; Data desk</span><h2 id="data-title">Maps that <em>explain.</em></h2></div>
+      <p>Data visualization for public audiences and for research: interactive maps, dashboards, and computational analysis of large social media datasets.</p>
+    </div>
+    <div class="desk">
+      <article class="panel reveal" id="w-shootings">
+        <div class="frame">
+          <img src="assets/shootings-map.jpg" alt="Map of the United States with red markers at the sites of fatal mass shootings" loading="lazy">
+          <button class="load" type="button" data-embed="https://www.google.com/maps/d/embed?mid=14QKs3mdOodq_gsnDuJqUs6IVwKLrUHoM&amp;ehbc=2E312F" aria-label="Load the interactive map here"><span class="btn">Load the interactive map</span></button>
+        </div>
+        <div class="body">
+          <span class="meta">Interactive data map &middot; 2021 &middot; Digital Storytelling</span>
+          <h3>Shooting Fatalities in the U.S.</h3>
+          <p>Fatal mass shootings in the United States, from schools and universities to workplaces and malls. Each marker places an incident, and its colour shows the death toll in six bands, from 3 to 70.</p>
+          <dl class="spec"><dt>Encoding</dt><dd>Position = location &middot; colour = death toll, 6 bands</dd><dt>Tool</dt><dd>Google My Maps</dd></dl>
+          <a class="go" href="https://www.google.com/maps/d/viewer?mid=14QKs3mdOodq_gsnDuJqUs6IVwKLrUHoM">Open full screen</a>
+        </div>
+      </article>
+      <article class="panel reveal" id="w-diaspora">
+        <div class="frame"><img src="assets/diaspora-map.jpg" alt="World map with markers at the headquarters of diaspora organizations" loading="lazy"></div>
+        <div class="body">
+          <span class="meta">Interactive Tableau map &middot; 2017</span>
+          <h3>OU Diaspora Map</h3>
+          <p>A world map of diaspora organizations that I designed and built on my own, for a Diplomacy Lab project with the State Department's Bureau of Educational and Cultural Affairs.</p>
+          <dl class="spec"><dt>Filters</dt><dd>Country, diaspora, organization type, hosts events</dd><dt>Tool</dt><dd>Tableau Public</dd></dl>
+          <a class="go" href="https://public.tableau.com/shared/RTFXB4638?:display_count=n&amp;:origin=viz_share_link">Explore the map</a>
+        </div>
+      </article>
+    </div>
+    <article class="panel reveal" style="margin-top:28px">
+      <div class="body">
+        <span class="meta">Doctoral research &middot; University of Oklahoma &middot; 2021</span>
+        <h3>178 embassies, three years of posts</h3>
+        <p>My dissertation, <em>Social Media in Public Diplomacy</em>, analyzed how foreign embassies in the United States use social media to engage their audiences, combining computational text analysis, social network analysis and geospatial analysis of who they reach.</p>
+        <dl class="spec"><dt>Methods</dt><dd>Text analysis &middot; NLP &middot; social network analysis &middot; geospatial audience analysis</dd><dt>Tools</dt><dd>Python &middot; R &middot; NodeXL</dd></dl>
+      </div>
+    </article>
+    <div class="toolbelt reveal">
+      <span class="meta">Toolbelt</span>
+      <span class="tag">Tableau</span><span class="tag">ArcGIS</span><span class="tag">Flourish</span><span class="tag">R &middot; ggplot2</span><span class="tag">Python</span><span class="tag">Google Data Studio</span><span class="tag">Google My Maps</span><span class="tag">SPSS</span><span class="tag">HTML &middot; CSS &middot; JS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="block" id="video" aria-labelledby="video-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">04 &middot; Video</span><h2 id="video-title">From the <em>archive</em> to the bureau.</h2></div>
+      <p>A short documentary built from a week in the Library of Congress microfilm collections, TV news packages produced with student journalists in Washington and Oklahoma, and an AI-generated film screened at IAMCR 2026.</p>
+    </div>
+    <div class="reel" id="reel"></div>
+    <p class="students-note reveal"><b>Produced with students.</b> News packages from JMC 3003 Multimedia Journalism, Fall 2021, Gaylord College, University of Oklahoma. I directed, edited and produced each piece. Student journalists did the reporting and narration, and each video credits them by name.</p>
+  </div>
+</section>
+
+<!-- ============ AUDIO ============ -->
+<section class="block" id="audio" aria-labelledby="audio-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">05 &middot; Audio</span><h2 id="audio-title">Long-form <em>listening.</em></h2></div>
+      <p>A Gaylord News podcast series produced in JMC 4303 Advanced Multimedia Journalism, Spring 2022, University of Oklahoma.</p>
+    </div>
+    <div class="podcast reveal">
+      <div class="cover">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="none" aria-hidden="true" id="cover-wave"></svg>
+        <span class="kicker" style="position:relative">Podcast series</span>
+        <h3>America&rsquo;s Cross-Roads</h3>
+        <span class="meta">Gaylord News Production</span>
+      </div>
+      <div>
+        <p style="margin-top:0">A series on the 2020 election and Oklahoma politics, focused on Christian nationalism and its role in the state&rsquo;s politics. Each episode takes one aspect of Christian nationalism, often with expert guests alongside the Gaylord News team.</p>
+        <ul class="eplist" id="eplist"></ul>
+        <p class="fine">I directed, edited and produced Episodes 2 to 6. A student team did the reporting and voice work, and each episode credits them by name. Audio plays through SoundCloud.</p>
+        <div class="sc-host" id="sc-host"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEACHING ============ -->
+<section class="block" id="teaching" aria-labelledby="teaching-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">06 &middot; Teaching</span><h2 id="teaching-title">Students make <em>real</em> work.</h2></div>
+      <p>University teaching since 2015, at undergraduate and graduate levels, for students from the United States, Bangladesh, China and beyond, many studying in their second or third language.</p>
+    </div>
+    <div class="teach">
+      <ol class="inst reveal">
+        <li class="now"><h4>Stirling College, Chengdu University</h4><span class="meta">China &middot; 2024&ndash;2025</span><p>Senior Lecturer of Media Studies in a joint program with the University of Stirling. Taught and supervised undergraduates and designed curricula for several courses.</p></li>
+        <li><h4>University of Liberal Arts Bangladesh</h4><span class="meta">Dhaka &middot; 2023</span><p>Assistant Professor of Media Studies. Graduate courses in Research Methodology and Health Communication.</p></li>
+        <li><h4>Gaylord College, University of Oklahoma</h4><span class="meta">USA &middot; 2021&ndash;2022</span><p>Assistant Professor of Digital Media. Multimedia Journalism and Advanced Multimedia Journalism, with student work published by Gaylord News.</p></li>
+        <li><h4>Gaylord College, University of Oklahoma</h4><span class="meta">USA &middot; 2015&ndash;2021</span><p>Graduate teaching and research assistant.</p></li>
+      </ol>
+      <div class="course-groups reveal">
+        <div class="course-group"><h4>Media production and journalism</h4><div class="tags"><span class="tag">Multimedia Journalism</span><span class="tag">Advanced Multimedia Journalism</span><span class="tag">Digital Storytelling</span><span class="tag">Media Writing</span><span class="tag">Multimedia Content Management</span></div></div>
+        <div class="course-group"><h4>Data and visual communication</h4><div class="tags"><span class="tag">Data Imagery and Visualization</span><span class="tag">Mapping and Data Visualization</span></div></div>
+        <div class="course-group"><h4>Social media and strategic communication</h4><div class="tags"><span class="tag">Strategic Communication in Social Media</span><span class="tag">Media Relations</span></div></div>
+        <div class="course-group"><h4>Research methods and theory</h4><div class="tags"><span class="tag">Research Methodology</span><span class="tag">Special Topics in Digital Communication</span><span class="tag">Health Communication</span></div></div>
+        <div class="course-group"><h4>Ethics, media and society</h4><div class="tags"><span class="tag">Ethics in Media and Communication</span><span class="tag">Women in Media Leadership</span></div></div>
+        <div class="course-group"><h4>Study abroad, South Africa</h4><div class="tags"><span class="tag">The Role of the South African Media</span><span class="tag">Human Rights and Mass Trauma in South Africa</span></div></div>
+      </div>
+    </div>
+    <div class="principles reveal">
+      <div><b>Made for an audience</b><p>Every course ends in work students produce for real readers: a story, a campaign plan, a dataset analyzed and reported, or an argument about a media event.</p></div>
+      <div><b>Built in stages</b><p>Projects move from pitch and plan to rough cut and final, with written feedback and peer review at each stage. In Data Imagery, students chart a public dataset in Tableau or R and write the story around it.</p></div>
+      <div><b>Ethics in every assignment</b><p>Consent before recording people, protecting sources, accurate editing, and disclosure of AI use. AI tools and coding agents come in where they fit the task.</p></div>
+    </div>
+    <div class="supervision reveal">
+      <div><b>4</b>master&rsquo;s students advised</div>
+      <div><b>8</b>thesis committees</div>
+      <div><b>~20</b>undergraduate projects supervised</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section class="block" id="research" aria-labelledby="research-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">07 &middot; Research</span><h2 id="research-title">What makes media <em>credible?</em></h2></div>
+      <p>Experimental and computational research on AI-generated images and news credibility, tourism advertising and country image, and social media in public diplomacy.</p>
+    </div>
+    <div class="interests reveal">
+      <span>AI-generated images and news credibility</span><span>Media credibility and trust</span><span>Social media and public diplomacy</span><span>Nation branding and country image</span><span>Journalism education in South Asia</span><span>Computational methods</span>
+    </div>
+    <div class="research">
+      <div class="pubs reveal">
+        <h3>Journal articles</h3>
+        <ol>
+          <li><span class="yr">In press</span><span>Hasnat, I., &amp; Genilo, J. W. Detection as the only defence: Image origin, colour, and the perceived credibility of AI-generated news photographs. <cite>Revista Interin</cite>.</span></li>
+          <li><span class="yr">In press</span><span>Genilo, J. W., &amp; Hasnat, I. Constructing legitimate AI governance: Recognition practices and the inclusion gap in Asian technology awards. <cite>Asian Journal of Communication</cite>.</span></li>
+          <li><span class="yr">2022</span><span>Hasnat, I., &amp; Leshner, G. Applying experimental methodology in public diplomacy. <cite>Place Branding and Public Diplomacy, 18</cite>(3), 254&ndash;260.</span></li>
+          <li><span class="yr">2019</span><span>Hasnat, I., &amp; Steyn, E. Toward a &ldquo;Beautiful Bangladesh&rdquo;: The bleed-over effect of tourism advertising. <cite>Place Branding and Public Diplomacy, 16</cite>(2), 165&ndash;173. <a href="https://doi.org/10.1057/s41254-019-00142-6">doi:10.1057/s41254-019-00142-6</a></span></li>
+          <li><span class="yr">2016</span><span>Steyn, T. F. J., Billiot, T., Wohlers, T., Steyn, E., &amp; Hasnat, I. Influencing voter behavior? A balance theory perspective on the role of happiness in the 2012 U.S. presidential election. <cite>The International Journal of Interdisciplinary Civic and Political Studies, 11</cite>(1), 1&ndash;20.</span></li>
+        </ol>
+        <h3>Book chapters</h3>
+        <ol>
+          <li><span class="yr">In press</span><span>Hasnat, I. Communication inequality in the digital era: A longitudinal cross-national analysis of access, use, and outcomes. In W. Adamolekun, J. W. Genilo, R. Benecke, &amp; T. S. G&ouml;rpe (Eds.), <cite>The Palgrave handbook on responsible communication for a sustainable future (SDG 18)</cite>. Palgrave Macmillan.</span></li>
+          <li><span class="yr">In press</span><span>Genilo, J. W., &amp; Hasnat, I. Communication in a low-trust society: Applying trustless strategic communication to transformative communication. In F. Weder, M. Rochyadi-Reetz, &amp; F. H&ouml;hs (Eds.), <cite>Research handbook of transformative communication: A critical perspective on sustainability communication</cite>. Edward Elgar.</span></li>
+          <li><span class="yr">2021</span><span>Hasnat, I., &amp; Steyn, E. The curious case of Bangladesh and Nepal: Tourism advertising to transform country image and empower developing countries. In <cite>Tourism Marketing in Bangladesh: An Introduction</cite>. Routledge.</span></li>
+          <li><span class="yr">2018</span><span>Hasnat, I., &amp; Steyn, E. Community radio in Bangladesh: Limited reach with unlimited impact. In <cite>Critical Perspectives on Journalistic Beliefs and Actions: Global Experiences</cite> (pp. 69&ndash;79). Routledge.</span></li>
+          <li><span class="yr">2017</span><span>Hasnat, I., &amp; Steyn, E. From &ldquo;Bottomless Basket&rdquo; to &ldquo;Beautiful Bangladesh&rdquo;: Nation branding through tourism and public diplomacy. In <cite>Shaping International Public Opinion</cite> (pp. 149&ndash;168). Peter Lang.</span></li>
+        </ol>
+        <details class="more">
+          <summary>Proceedings, dissertation and reports</summary>
+          <ol style="margin-top:12px">
+            <li><span class="yr">2021</span><span>Hasnat, I. <cite>Social Media in Public Diplomacy: How Foreign Embassies in the U.S. Use Social Media to Engage Their Audience</cite>. Doctoral dissertation, University of Oklahoma.</span></li>
+            <li><span class="yr">2019</span><span>Petrotta, A. B., Hasnat, I., &amp; Tapia, M. Golden goals: How a new NHL franchise responded to tragedy. <cite>Proceedings of the 22nd International Public Relations Research Conference</cite>, 376&ndash;378.</span></li>
+            <li><span class="yr">2016</span><span>Hasnat, I. <cite>Public Diplomacy via Social Media: An Integrated Strategy for the U.S. Embassy in Costa Rica</cite>. Diplomacy Lab report, U.S. Department of State.</span></li>
+          </ol>
+        </details>
+      </div>
+      <div class="talks reveal">
+        <h3>Conference talks by year</h3>
+        <p class="meta" style="margin:-6px 0 14px">Click a year to list its talks. The <a href="#top" data-show-talks>Talks layer</a> on the map shows where they were given.</p>
+        <div class="talk-chart" id="talk-chart"><div class="tip" role="status"></div></div>
+        <div class="talk-list" id="talk-list" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI ============ -->
+<section class="block" id="ai" aria-labelledby="ai-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">08 &middot; AI</span><h2 id="ai-title">AI, studied and <em>used.</em></h2></div>
+      <p>I research how audiences judge AI-made media, teach students to use AI openly, and use it in my own production and data work, always with a human check before anything is published.</p>
+    </div>
+    <article class="ai-film reveal" aria-labelledby="re-title">
+      <button class="ai-film-art" type="button" data-yt="pVPaolNa4Dc" data-title="Real Enough" aria-label="Play Real Enough">
+        <span class="poster" aria-hidden="true"><span class="pgrid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="ptitle">Real Enough</span></span>
+        <span class="badge"><span class="dot video"></span>AI-generated film &middot; 1:13</span>
+        <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
+      </button>
+      <div class="ai-film-body">
+        <span class="kicker">Made with AI</span>
+        <h3 id="re-title">Real Enough</h3>
+        <p class="meta">Experimental film &middot; ExpVideoFest, IAMCR 2026, Galway &middot; Screened 1 July 2026</p>
+        <p>An AI-generated film about the collapse of visual certainty. Photographs of protests, disasters and everyday life repeat and mutate across screens, and the audience is never told which images are real.</p>
+        <p class="q">When visual evidence becomes endlessly reproducible and subtly alterable, what exactly are we trusting when we look at a photograph?</p>
+        <dl class="spec">
+          <dt>Role</dt><dd>Written, directed and produced solo</dd>
+          <dt>Made with</dt><dd>Claude &middot; Gemini &middot; OpenAI &middot; Meta AI &middot; Cartesia</dd>
+          <dt>Grew from</dt><dd><a href="#research">My research on AI news credibility</a></dd>
+        </dl>
+        <button class="btn" type="button" data-yt="pVPaolNa4Dc" data-title="Real Enough">Watch the film &middot; 1:13</button>
+      </div>
+    </article>
+    <div class="ai">
+      <div class="ai-side">
+        <div class="ai-block reveal">
+          <h3>Studying it</h3>
+          <ul>
+            <li><b>AI news photos and credibility.</b> An experiment on how image origin and colour shape the perceived credibility of AI-generated news photographs. <span class="meta">Revista Interin, in press &middot; IAMCR 2026, Galway &middot; CJEN 2025, Dhaka</span></li>
+            <li><b>AI governance.</b> How Asian technology awards confer legitimacy, and who they leave out. <span class="meta">Asian Journal of Communication, in press</span></li>
+          </ul>
+          <a class="go" href="#research">All publications</a>
+        </div>
+        <div class="ai-block reveal">
+          <h3>Teaching it</h3>
+          <ul>
+            <li>Students bring AI tools, AI agents and coding agents into production and data work where they fit the task.</li>
+            <li>Every assignment requires students to disclose how they used AI.</li>
+            <li>In class demonstrations, I show prototype video and synthetic voices made with AI, always labeled as AI.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="toolkit reveal">
+        <h3>Using it <span class="meta">My toolkit, by task</span></h3>
+        <dl>
+          <div><dt>Writing and editing</dt><dd>
+            <p><b>Claude</b>, for drafting and line editing long documents.</p>
+            <p><b>ChatGPT</b> and <b>Gemini</b>, for a second reading and counterarguments.</p>
+            <p><b>Grammarly</b> and <b>DeepL Write</b>, for a final check on grammar and tone.</p></dd></div>
+          <div><dt>Transcription and translation</dt><dd>
+            <p><b>Whisper</b>, run through Hugging Face, for interview transcripts, checked against the audio before I quote anyone.</p>
+            <p><b>Descript</b> and <b>Otter.ai</b>, for editing podcasts and video from the transcript.</p>
+            <p><b>DeepL</b> and <b>Google Translate</b>, for first drafts in Bengali and Mandarin, which I revise by hand.</p></dd></div>
+          <div><dt>Image, video and audio</dt><dd>
+            <p><b>Nano Banana</b> (Google Gemini), for generating the AI news photographs used in my credibility experiment.</p>
+            <p><b>Adobe Firefly</b>, with generative fill in Photoshop and Premiere Pro, for extending shots and cleanup.</p>
+            <p><b>Adobe Podcast</b> and <b>DaVinci Resolve</b>, for voice isolation and audio repair.</p>
+            <p><b>Runway</b>, <b>Higgsfield AI</b> and <b>ElevenLabs</b>, for prototype video and synthetic voices in class demonstrations, always labeled as AI.</p>
+            <p><b>Cartesia</b>, for the AI voice in <a href="#ai">Real Enough</a>, my AI-generated film.</p></dd></div>
+          <div><dt>Data and code</dt><dd>
+            <p><b>Claude Code</b>, <b>Codex</b>, <b>GitHub Copilot</b> and <b>Cline</b>, for writing and debugging R and Python analysis scripts, and for web projects, including this site.</p>
+            <p><b>Hugging Face</b> and <b>OpenRouter</b>, for running open and custom models on specific tasks, and for comparing models side by side before choosing one.</p></dd></div>
+          <div><dt>Research</dt><dd>
+            <p><b>Elicit</b>, <b>Consensus</b> and <b>Semantic Scholar</b>, for literature search. I read every source in full before citing it.</p>
+            <p><b>NotebookLM</b> and the AI assistants in <b>NVivo</b> and <b>MAXQDA</b>, for a first pass through papers and qualitative data, checked against a human codebook.</p></dd></div>
+        </dl>
+        <p class="ai-note">The list changes often. I keep a tool when it saves time and its output holds up when checked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLIC TALKS ============ -->
+<section class="block" id="public" aria-labelledby="public-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">09 &middot; Public talks</span><h2 id="public-title">On air and <em>online.</em></h2></div>
+      <p>Television appearances and guest lectures for audiences beyond the academy, from youth and social media trends to public diplomacy in the digital age and theories of world order.</p>
+    </div>
+    <div class="appearances reveal" id="appearances"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="block" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="kicker">10 &middot; About</span><h2 id="about-title">Media, politics and all things <em>digital.</em></h2></div>
+    </div>
+    <div class="about">
+      <div class="portrait reveal" aria-hidden="true"><span class="mono-mark">IH</span><span class="ph">Photo coming soon</span></div>
+      <div class="bio reveal">
+        <p>I am a researcher and educator who studies media, politics and all things digital, with a PhD in Mass Communication from the University of Oklahoma.</p>
+        <p>I spent five years reporting and editing in Bangladesh before an academic career, at <em>The New Age</em> and as founding editor of the quarterly <em>Glocal</em>. Since 2015 I have taught journalism, media production, social media, data visualization and research methods in the United States, Bangladesh and China.</p>
+        <p>As Co-Principal Investigator on U.S. Department of State exchange grants worth more than $2 million, I led capacity-building workshops for media professionals and entrepreneurs from six countries, including Bangladesh, Nepal, Pakistan and Kazakhstan. I am based in Dhaka.</p>
+        <dl class="facts">
+          <div><dt>Education</dt><dd>PhD, Mass Communication, OU, 2021<br>MA, Journalism, OU, 2017<br>MA, International Relations, Jahangirnagar University, 2013</dd></div>
+          <div><dt>Recognition</dt><dd>Knight Foundation Ph.Digital Bootcamp Fellowship, 2020<br>AEJMC Presidential Diversity and Inclusion Fellowship, 2020<br>Chancellor&rsquo;s Medal, Jahangirnagar University</dd></div>
+          <div><dt>Languages</dt><dd>Bengali (native), English (fluent), Mandarin (conversational), French (basic)</dd></div>
+          <div><dt>Journalism</dt><dd>Editor, Gaylord News, 2020&ndash;2022<br>Founding Editor-in-Chief, Glocal, 2013&ndash;2015<br>Feature writer, The New Age, 2010&ndash;2013</dd></div>
+          <div><dt>Communication</dt><dd>RMMRU migrant-rights campaigns, 2024&ndash;2025<br>State Department Diplomacy Lab, 2016&ndash;2021<br>High Commission of Canada, Dhaka, 2013&ndash;2014<br>Secretary General, Relations in Motion, Dhaka, 2011&ndash;2013</dd></div>
+          <div><dt>Affiliations</dt><dd>AEJMC &middot; ICA &middot; WJEC</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <span class="kicker">11 &middot; Contact</span>
+    <div class="contact-grid">
+      <div>
+        <h2 id="contact-title" style="margin-top:16px">Let&rsquo;s make<br>something <em>true.</em></h2>
+        <p class="lede" style="margin-top:22px">For research collaboration, teaching, talks or media projects, send a message and I&rsquo;ll reply by email.</p>
+        <div class="links">
+          <a class="btn ghost" href="https://orcid.org/0000-0001-9397-3407">ORCID</a>
+          <a class="btn ghost" href="https://github.com/imranpalash">GitHub</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field-row">
+          <label class="field"><span>Name</span><input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="120"></label>
+          <label class="field"><span>Email</span><input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="200"></label>
+        </div>
+        <label class="field"><span>About</span>
+          <select id="cf-topic" name="topic">
+            <option>Research collaboration</option>
+            <option>Teaching or a talk</option>
+            <option>Media or data project</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label class="field"><span>Message</span><textarea id="cf-message" name="message" rows="6" required maxlength="5000"></textarea></label>
+        <label class="hp" aria-hidden="true">Leave this empty <input id="cf-hp" name="botcheck" type="text" tabindex="-1" autocomplete="off"></label>
+        <div class="form-foot">
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status meta" id="cf-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+    <div class="foot meta">
+      <span>&copy; <span id="yr">2026</span> Imran Hasnat &middot; Dhaka, Bangladesh</span>
+      <span>Built by hand with HTML, CSS and D3 &middot; Map data: Natural Earth</span>
+    </div>
+  </div>
+</section>
 
 </main>
 
-<footer>
-  <div class="wrap">Imran Hasnat, PhD &middot; Dhaka, Bangladesh &middot; <a href="mailto:imranpalash@gmail.com">imranpalash@gmail.com</a></div>
-</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="box">
+    <div class="vid"></div>
+    <div class="cap"><b></b><button class="icon-btn" type="button" aria-label="Close video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="assets/js/world.js"></script>
+<script src="assets/js/atlas.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

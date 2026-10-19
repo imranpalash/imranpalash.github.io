@@ -21,4 +21,4 @@ Delete any existing A or CNAME records for `@` and `www`, then add:
 2. Wait until the DNS check passes (a few minutes to a few hours), then tick "Enforce HTTPS".
 3. Test: https://imranhasnat.com and https://imranhasnat.com/race-to-refuge/
 
-To add a piece later, copy the TEMPLATE block in `index.html`, fill it in, put its image in `assets`, and upload the changed files the same way.
+To add a piece later, copy one entry in the `WORKS` list in `assets/js/data.js`, fill it in, and put its image in `assets`. The map, timeline and work index update from that file. To preview the site, double-click `index.html`.
