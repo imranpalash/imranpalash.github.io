@@ -173,8 +173,10 @@
     </article>`;
   if (reel) {
     // Left column: the featured documentary, then AI-made work. Right column: the student news packages.
-    const lead = vids.find(v => v.featured), ai = vids.filter(v => v.ai), rest = vids.filter(v => v !== lead && !v.ai);
+    const lead = vids.find(v => v.featured), ai = vids.filter(v => v.ai), rest = vids.filter(v => v !== lead && !v.ai && !v.lab);
     reel.innerHTML = `<div class="reveal lead-col">${card(lead, true)}${ai.map(w => card(w)).join("")}</div><div class="side reveal">${rest.map(w => card(w)).join("")}</div>`;
+    const lab = $("#lab-reel");
+    if (lab) lab.innerHTML = vids.filter(v => v.lab).map(w => card(w)).join("");
     $$(".reveal", reel).forEach(prepReveal);
   }
 

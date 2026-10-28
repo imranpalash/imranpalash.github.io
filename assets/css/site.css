@@ -401,6 +401,17 @@ section.block { padding: clamp(72px, 10vw, 130px) 0 0; }
 .lightbox .cap b { font-family: var(--f-display); font-size: 20px; font-weight: 600; }
 .lightbox .icon-btn { color: #f2ede5; border-color: rgba(255,255,255,.3); }
 
+.lab { margin-top: clamp(48px, 6vw, 72px); padding-top: 28px; border-top: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: clamp(24px, 4vw, 48px); align-items: start; }
+.lab h3 { font-size: 26px; display: grid; gap: 6px; margin-bottom: 12px; }
+.lab h3 .meta { font-family: var(--f-mono); font-weight: 400; font-size: 12px; letter-spacing: .06em; }
+.lab-head p { margin: 0; font-size: 16px; color: var(--ink-2); }
+.lab-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.lab-grid .card { grid-column: auto; }
+.lab-grid .card h3 { font-size: 20px; margin: 12px 0 4px; display: block; }
+.lab-grid .card p:not(.meta) { font-size: 15px; }
+@media (max-width: 900px) { .lab { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .lab-grid { grid-template-columns: 1fr; } }
+
 /* ---------- audio ---------- */
 .podcast { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(24px, 4vw, 56px); border: 1px solid var(--rule); border-radius: 14px; background: var(--surface); padding: clamp(20px, 3.5vw, 40px); }
 .podcast .cover { aspect-ratio: 1; border-radius: 12px; position: relative; overflow: hidden; background: radial-gradient(120% 90% at 20% 10%, #3a1219, #120d10 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; color: #f2ede5; }

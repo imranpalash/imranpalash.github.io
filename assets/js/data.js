@@ -65,6 +65,16 @@ window.WORKS = [
     blurb: "An AI-generated film about the collapse of visual certainty. Photographs of protests, disasters and everyday life repeat and mutate across screens, and the audience is never told which images are real.",
     role: "Written, directed and produced solo with Claude, Gemini, OpenAI, Meta AI and Cartesia" },
 
+  { id: "cdu-promo", title: "Stirling CDU Promo Pack", year: 2024, medium: "video", place: "chengdu", lab: true, students: true,
+    youtube: "6q8pQl1y5U8", img: "https://i.ytimg.com/vi/6q8pQl1y5U8/mqdefault.jpg", alt: "",
+    format: "Promotional video, 4:11", context: "Media lab, Stirling College, Chengdu University",
+    blurb: "A promotional package for Stirling College at Chengdu University, shot with students in the college media lab." },
+
+  { id: "cdu-sports-day", title: "Stirling CDU Sports Day", year: 2024, medium: "video", place: "chengdu", lab: true, students: true,
+    youtube: "yyMmbq-LTqM", img: "https://i.ytimg.com/vi/yyMmbq-LTqM/maxresdefault.jpg", alt: "",
+    format: "Event video, 1:22", context: "Media lab, Stirling College, Chengdu University",
+    blurb: "Event coverage of the Stirling College sports day, shot with students in the college media lab." },
+
   { id: "tulsa", title: "Tulsa Race Massacre Education Around the Country", year: 2021, medium: "video", place: "washington",
     format: "TV news package, 1:41", context: "Gaylord News, Washington bureau",
     img: "assets/tulsa-massacre-education.jpg", alt: "The National Museum of African American History and Culture in Washington, D.C.",
